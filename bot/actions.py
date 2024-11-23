@@ -2,7 +2,7 @@ import config
 import telebot
 import logging
 
-logging.basicConfig(level=logging.INFO, format='[%(asctime)s] %(levelname)s - %(message)s', datefmt='%Y-%m-%d %H:%M:%S', handlers=[logging.FileHandler('bot/info.log', encoding="utf-8"), logging.StreamHandler()])
+logging.basicConfig(level=logging.INFO, format='[%(asctime)s] %(levelname)s - %(message)s', datefmt='%Y-%m-%d %H:%M:%S', handlers=[logging.FileHandler('logs/bot.log', encoding="utf-8"), logging.StreamHandler()])
 
 def message_add(message):
   from bot.data import main as data
@@ -31,8 +31,8 @@ def message_clear(message):
     for message_to_remove in messages_to_remove:
       data.messages.remove(message_to_remove)
 
-def log_info(information):
-  logging.info(information)
+def log_info(message):
+  logging.info(message)
   
 def log_message(message, sent_message):
   logging.info(f"Bot replied with: message {sent_message.message_id} to User: {message.from_user.id}")
