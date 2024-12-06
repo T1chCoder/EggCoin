@@ -2,14 +2,8 @@
 __pycache__/
 *.py[cod]
 
-# Database files
-*.sqlite3
-
-# Media files (user-uploaded content)
-media/
-
-# Static files
-static/
+# Secret key (if you're not using environment variables for it)
+*.env
 
 # Virtual environment
 venv/
