@@ -1,0 +1,16 @@
+h1 {
+	font-size: 32px;
+	color: var(--clr-1);
+	font-weight: 600;
+}
+
+span {
+	font-size: 12px;
+	color: var(--clr-1);
+}
+
+h3 {
+	font-size: 16px;
+	color: var(--clr-2);
+	font-weight: 600;
+}

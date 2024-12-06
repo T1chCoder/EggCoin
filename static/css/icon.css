@@ -1,0 +1,8 @@
+.icn-1 {
+	width: var(--icn-sz);
+	height: var(--icn-sz);
+}
+
+.icn-1 {
+	--icn-sz: 32px;
+}

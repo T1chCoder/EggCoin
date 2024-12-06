@@ -1,0 +1,72 @@
+nav {
+	gap: 24px;
+}
+
+nav {
+	padding-top: 16px;
+}
+
+nav > .btns {
+	width: 100%;
+	overflow: hidden;
+	height: 68px;
+}
+
+nav > .btns,
+nav > .btns > .bg-efct,
+nav > .indctr .lns,
+nav > .indctr .lns > .bg-efct,
+nav > .indctr .lns > .ln,
+nav > .indctr .lns > .ln > .bg-efct,
+main > .cn,
+main > .cn > .bg-efct,
+main > .cn > .cn-icn {
+	border-radius: 10000px;
+}
+
+nav > .btns > .bg-efct,
+nav > .indctr .lns > .bg-efct {
+	border: .5px solid var(--bg-clr-3);
+	box-shadow: inset 0px 2.75px 4.5px var(--bg-clr-4);
+}
+
+nav > .btns > .btn {
+	flex: 1;
+	gap: 3.2px;
+	height: 100%;
+}
+
+nav > .btns > .btn:hover {
+	background-color: var(--bg-clr-3);
+}
+
+nav > .btns > .btn:active {
+	background-color: var(--bg-clr-4);
+}
+
+nav > .indctr {
+	gap: 8px;
+	align-items: center;
+}
+
+nav > .indctr .lns {
+	width: 100%;
+	padding: 4px;
+	justify-content: flex-start;
+}
+
+nav > .indctr .lns > .ln {
+	width: var(--cns-clctd);
+	height: 15.5px;
+	background: linear-gradient(to right, var(--bg-clr-5) 23%, var(--bg-clr-6) 100%);
+	box-shadow: inset 0px 2.75px 4.5px var(--bg-clr-4);
+}
+
+nav > .indctr .txts {
+	width: 101px;
+	justify-content: flex-end;
+}
+
+nav > .indctr .txts > .txt {
+	height: 19px;
+}
