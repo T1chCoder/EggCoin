@@ -4,7 +4,7 @@ class HomeView:
   def __call__(self):
     return render("leads/home.html")
   
-class WebHook:
+class WebHookView:
   def __call__(self):
     if request.headers.get('content-type') == 'application/json':
         return '', 200
