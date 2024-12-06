@@ -3,13 +3,11 @@ import handlers
 
 def set_webhook():
     import config
-    webhook_url = config.WEBHOOK_URL
     bot.remove_webhook()
-    bot.set_webhook(url=webhook_url)
+    bot.set_webhook(url=config.WEBHOOK_URL)
 
 def init():
     handlers.view_handle()
-    bot.polling()
 
 if __name__ == "__main__":
     set_webhook()
